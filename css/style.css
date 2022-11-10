@@ -1,0 +1,104 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+header {
+  max-width: 59rem;
+  margin: 6rem auto;
+}
+header h1 {
+  color: hsl(234, 12%, 34%);
+  font-size: 3.6rem;
+  font-weight: 200;
+  text-align: center;
+}
+header h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header p {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.6rem;
+  text-align: center;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+  width: fit-content;
+  align-content: center;
+  margin: 2rem auto;
+}
+.box {
+  width: 35rem;
+  height: 25rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  padding: 3rem;
+  box-shadow: 1px 1px 30px rgb(0 0 0 / 15%);
+}
+.Supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  grid-row: span 3;
+}
+.Team {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.Karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.Calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  grid-row: span 3;
+}
+.box h3 {
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.box p {
+  font-size: 1.5rem;
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 4rem;
+  line-height: 1.4;
+}
+.box img {
+  align-self: flex-end;
+}
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    width: 34rem;
+  }
+  header h1 {
+    font-size: 2.7rem;
+  }
+  header h2 {
+    font-size: 2.7rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
